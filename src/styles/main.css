@@ -1,0 +1,161 @@
+.Main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(231, 231, 254);
+}
+.topbar {
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7rem;
+    align-items: center;
+}
+.topbar>h1 {
+    color: white;
+}
+.topbar>button {
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: rgb(213, 0, 0);
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+}
+.topbar>button:hover {
+    background-color: rgb(231, 0, 0);
+}
+.mainbox {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+.display {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timebox {
+    width: 35rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+.Timer {
+    width: 23%;
+    height: 100%;
+}
+.number {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bolder;
+}
+.header {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+.controls {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controlbox {
+    width: 30rem;
+    height: 30rem;
+}
+.stopwatchbox, .lapbox {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stopwatchbox>button {
+    width: 40%;
+    height: 60%;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 550;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.lapbox>button {
+    width: 100%;
+    height: 60%;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 550;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.stopwatchbox>button:hover, .lapbox>button:hover {
+    background-color: rgb(46, 0, 0);
+}
+.records {
+    width: 100%;
+    height: 60%;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    font-size: 20px;
+    overflow: auto;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+}
+.records::-webkit-scrollbar {
+    display: none;
+}
+@media(width <= 991px){
+    .topbar {
+        padding: 0 2rem;
+    }
+    .mainbox {
+        display: flex;
+        flex-direction: column;
+    }
+    .display {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .controls {
+        width: 100%;
+        height: 70%;
+    }
+    .controlbox {
+        width: 35rem;
+        height: 100%;
+    }
+    .stopwatchbox, .lapbox {
+        height: 22%;
+    }
+    .records {
+        height: 56%;
+        font-size: 20px;
+    }
+}
